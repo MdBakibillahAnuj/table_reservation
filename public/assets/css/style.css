@@ -1,0 +1,20 @@
+a.navbar-brand img {
+    width: 60px;
+    height: 40px;
+}
+
+
+ul.navbar-nav.ml-auto {
+    margin-left: auto;
+    text-align: center;
+}
+a.nav-link {
+    font-weight: 100;
+    color: blanchedalmond;
+    font-family: Forte;
+    font-size: 24px;
+}
+nav#ftco-navbar {
+    background:  sandybrown;
+
+}

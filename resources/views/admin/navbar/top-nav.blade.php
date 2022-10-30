@@ -12,9 +12,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Category</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item cta"><a href="#" class="nav-link">Book a table</a></li>
+                <li class="nav-item"><a href="{{ route('admin.view.table') }}" class="nav-link">Table</a></li>
+                <li class="nav-item"><a href="{{ route('admin.view.reservations') }}" class="nav-link">Reservation</a></li>
+                <li class="nav-item cta"><a href="#" class="nav-link">Book</a></li>
                 @if(!Auth::check())
                     <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
                     <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>

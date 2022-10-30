@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\TableController;
+use App\Http\Controllers\ReservationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,4 +31,6 @@ Route::middleware([
 
 Route::middleware(['auth', 'admin'])->name('admin.')->group(function (){
  Route::get('/', [AdminController::class, 'index'])->name('index');
+ Route::get('/tables', [TableController::class, 'index'])->name('view.table');
+ Route::get('/reservations', [ReservationController::class, 'index'])->name('view.reservations');
 });
